@@ -1,0 +1,96 @@
+:root {
+  box-sizing: border-box;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(54, 94, 50);
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.summary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 1px solid rgb(0, 0, 0);
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  background-color: rgb(253, 155, 99);
+  border-radius: 15px; /* Untuk mengatur ketajaman sudut */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  padding: 20px;
+}
+
+#scoreboard {
+  margin-top: 20px;
+}
+
+h2#finalResult {
+  margin-top: 20px;
+  font-size: 24px;
+  color: red; /* Warna teks merah */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan teks */
+}
+
+#resetButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(255, 69, 0); /* Warna latar belakang tombol */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+#resetButton:hover {
+  background-color: rgb(200, 55, 0); /* Warna latar belakang tombol saat di-hover */
+}
+
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Memberikan ruang antara games dan summary */
+}
+
+.option {
+  width: 100px; /* Lebar persegi panjang */
+  height: 150px; /* Tinggi persegi panjang */
+  margin: 10px 15px;
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  font-size: 40px;
+  background-color: rgb(253, 155, 99);
+  color: black;
+  border-radius: 10px; /* Membuat sudut lebih bulat */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Menambahkan transisi untuk transform dan warna latar belakang */
+  display: flex; /* Menambahkan flex untuk penataan teks di tengah */
+  justify-content: center; /* Menambahkan flex untuk penataan teks di tengah */
+  align-items: center; /* Menambahkan flex untuk penataan teks di tengah */
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: rgb(231, 211, 127);
+  transform: scale(1.05);
+}
